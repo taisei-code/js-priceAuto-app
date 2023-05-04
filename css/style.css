@@ -12,15 +12,53 @@
 
 .mac-content-wrapper {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 30px;
   margin-top: 100px;
   width: 100%;
 }
 
-.mac-img {
+.mac-price-right {
   width: 45%;
+}
+
+.mac-img {
+  width: 100%;
 }
 
 .mac-price-left {
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.price-left-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.price-item {
+  width: 100%;
+}
+.price-item:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.price-radio-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.price-radio-item span {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.price-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-top: 40px;
 }
